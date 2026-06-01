@@ -3,8 +3,8 @@ disabled_checks:
   - figures
 
 # Notebooks to skip entirely (all checks), supports glob patterns
-skip_notebooks:
-  - "./template-notebook.ipynb"
+#skip_notebooks:
+#  - "./template-notebook.ipynb"
 
 # # Per-notebook check configuration
 # notebooks:
