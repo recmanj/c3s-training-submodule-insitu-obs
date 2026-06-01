@@ -16,10 +16,15 @@ on:
         type: string
         default: ""
 
+permissions:
+  contents: read
+  pull-requests: write
+
 jobs:
   notebook-qa:
-    uses: ecmwf-training/reusable-workflows/.github/workflows/notebook-qa.yml@main
+    uses: recmanj/ecmwf-training-reusable-workflows/.github/workflows/notebook-qa.yml@qa-table-summary
     with:
       notebooks: ${{ inputs.notebooks || '' }}
     secrets:
       CDSAPI_KEY: ${{ secrets.CDSAPI_KEY }}
+
