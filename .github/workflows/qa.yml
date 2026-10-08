@@ -18,9 +18,10 @@ on:
 
 jobs:
   notebook-qa:
-    uses: recmanj/ecmwf-training-reusable-workflows/.github/workflows/notebook-qa.yml@qa-table-plumber-tests
+    uses: recmanj/ecmwf-training-reusable-workflows/.github/workflows/notebook-qa.yml@feat/link-check-views
     with:
       notebooks: ${{ inputs.notebooks || '' }}
       qa_tools_repo: recmanj/ecmwf-training-reusable-workflows
+      qa_tools_ref: feat/link-check-views
     secrets:
       CDSAPI_KEY: ${{ secrets.CDSAPI_KEY }}
