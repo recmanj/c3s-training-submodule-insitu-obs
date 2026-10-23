@@ -18,8 +18,10 @@ on:
 
 jobs:
   notebook-qa:
-    uses: ecmwf-training/reusable-workflows/.github/workflows/notebook-qa.yml@main
+    uses: recmanj/ecmwf-training-reusable-workflows/.github/workflows/notebook-qa.yml@fix/pynblint-click-and-summary-env-size
     with:
       notebooks: ${{ inputs.notebooks || '' }}
+      qa_tools_repo: recmanj/ecmwf-training-reusable-workflows
+      qa_tools_ref: fix/pynblint-click-and-summary-env-size
     secrets:
       CDSAPI_KEY: ${{ secrets.CDSAPI_KEY }}
