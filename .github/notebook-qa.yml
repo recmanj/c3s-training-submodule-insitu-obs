@@ -23,3 +23,10 @@ coverage_threshold: 80   # Minimum coverage percentage for pytest-cov
 #   exclude:                    # Additional rules to suppress (extends baseline)
 #     - untitled-notebook
 #   exclude_mode: extend        # "extend" (default) or "override"
+# The E-OBS notebooks download ~2.6 GB from the CDS (~10 min incl. queueing),
+# which exceeds the default per-cell runtime thresholds.
+performance_tests:
+  max_cell_memory_mb_warning: 1024
+  max_cell_memory_mb_fail: 2048
+  max_cell_runtime_seconds_warning: 600
+  max_cell_runtime_seconds_fail: 1800
