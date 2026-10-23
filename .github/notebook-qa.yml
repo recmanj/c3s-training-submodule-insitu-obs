@@ -30,3 +30,8 @@ performance_tests:
   max_cell_memory_mb_fail: 2048
   max_cell_runtime_seconds_warning: 600
   max_cell_runtime_seconds_fail: 1800
+
+# The map-plotting cell exceeds pynblint's fixed 30-line limit after ruff formatting
+pynblint:
+  exclude:
+    - cell-too-long
