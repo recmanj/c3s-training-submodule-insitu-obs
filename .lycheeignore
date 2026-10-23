@@ -1,0 +1,6 @@
+# URLs cut off by xarray's text repr in cell outputs (not real links)
+^https?://mpimet\.mpg/?$
+^https?://nco\.sf/?$
+^https?://surfobs\.climate\.copernicus\.eu/dataaccess/access_eo\.\.\.
+# doi.org redirects to AGU/Wiley, which returns 403 to automated checkers
+^https://doi\.org/10\.1029/2017JD028200$
