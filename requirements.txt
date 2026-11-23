@@ -4,3 +4,6 @@ numpy
 matplotlib
 xarray
 cartopy
+pandas
+netCDF4
+dask

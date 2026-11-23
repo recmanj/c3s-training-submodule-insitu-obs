@@ -23,3 +23,9 @@ coverage_threshold: 80   # Minimum coverage percentage for pytest-cov
 #   exclude:                    # Additional rules to suppress (extends baseline)
 #     - untitled-notebook
 #   exclude_mode: extend        # "extend" (default) or "override"
+
+# The GRUAN notebook defines its analysis functions in single cells, which
+# exceed pynblint's fixed 30-line limit
+pynblint:
+  exclude:
+    - cell-too-long
