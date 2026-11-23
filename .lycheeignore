@@ -1,0 +1,2 @@
+# doi.org redirects to the AMS journals site, which returns 405 to automated checkers
+^https://doi\.org/10\.1175/BAMS-D-14-00072\.1$
